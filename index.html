@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="intro-screen">
+            <h1>Trivia Game</h1>
+
+            <button class="start-btn">START</button>
+        </div>
+
+        <div class="game-screen" hidden>
+            <div class="score">Score: <span class="player-score">0</span></div>
+            <div class="question">Question</div>
+            <div class="timer-progress-bar">
+                <div class="timer-progress"></div>
+            </div>
+            <div class="answer-options">
+                <button class="answer-btn" data-option="a">Option A</button>
+                <button class="answer-btn" data-option="b">Option B</button>
+                <button class="answer-btn" data-option="c">Option C</button>
+            </div>
+        </div>
+
+        <div class="summary-screen" hidden>
+            <h2>Game Summary</h2>
+            <p>Correct Answers: <span class="correct-answer-count">0</span></p>
+            <p>Total Points: <span class="total-points">0</span></p>
+            <p>Average Time per Question: <span class="avg-time-per-question">0</span> seconds</p>
+            <button class="play-again-btn">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="trivia.js"></script>
+</body>
+</html>
